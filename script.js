@@ -2,6 +2,9 @@ let humanScore = 0;
 let computerScore = 0;
 
 
+let computerChoice = getComputerChoice();
+
+
 function getComputerChoice() {
     let range = (Math.floor(Math.random() * 3) + 1);
     if (range === 1) {
@@ -15,10 +18,10 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    let option = prompt("Choose! Rock, paper or scissors?")
-        return option.toLowerCase();
-}
+// function getHumanChoice() {
+//     let option = prompt("Choose! Rock, paper or scissors?")
+//         return option.toLowerCase();
+// }
 
 function playRound(humanChoice, computerChoice) {
     console.log("The computer chose " + computerChoice);
@@ -56,20 +59,17 @@ function nextRound() {
     console.log("Scores are, Human: " + humanScore + ", and Robot: " + computerScore);
 }
 
-function playGame() {
-    nextRound();
-    nextRound();
-    nextRound();
-    nextRound();
-    nextRound();    
-}
+const rock = document.querySelector(".rock");
+const paper = document.querySelector(".paper");
+const scissors = document.querySelector(".scissors");
 
-let humanChoice;
-let computerChoice;
+rock.addEventListener( "click", () => playRound("rock", computerChoice) );
+paper.addEventListener( "click", () => playRound("paper", computerChoice) );
+scissors.addEventListener( "click", () => playRound("scissors", computerChoice) );
 
-// console.log("The computer chose " + computerChoice);
-playGame();
-// console.log("Scores are, Human: " + humanScore + ", and Robot: " + computerScore);
+
+
+// playGame();
 
 
 
