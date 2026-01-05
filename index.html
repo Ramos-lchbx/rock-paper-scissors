@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>Rock, Paper, Scissors!</h1>
     
     <button class="rock">Rock</button>
     <button class="paper">Paper</button>
@@ -17,6 +19,35 @@
         <div class="scores"></div>
     </div>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: bisque;
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            color: rgb(87, 77, 66);
+        }
+
+        button {
+            padding: 10px;
+            margin: 0;
+            font-size: 18px;
+            background-color: rgb(253, 241, 226);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .overallResults {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1em;
+        }
+        .scores {
+            font-weight: bold;
+        }
+    </style>
     <script src="./script.js"></script>
 </body>
 </html>
