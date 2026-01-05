@@ -40,6 +40,10 @@ function playRound(humanChoice, computerChoice) {
         scores.textContent = `COMPUTER WINS, ${computerScore} - ${humanScore}!`;
     }
     else if (humanScore == 5) {
+        overallResults.removeChild(dispComChoice);
+        overallResults.removeChild(roundResults);
+        scores.style.color = "red";
+        scores.style.fontSize = "25px";
         scores.textContent = `YOU WIN, ${humanScore} - ${computerScore}!`;
     }
 
