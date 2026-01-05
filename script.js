@@ -43,9 +43,6 @@ function playRound(humanChoice, computerChoice) {
 
     else {
         scores.textContent = `HUMAN: ${humanScore} ROBOT: ${computerScore}`;
-        // overallResults.appendChild(dispComChoice);
-        // overallResults.appendChild(roundResults);
-        // overallResults.appendChild(scores);
         console.log(`Scores are, human: ${humanScore} and robot: ${computerScore}`);
     }
 
